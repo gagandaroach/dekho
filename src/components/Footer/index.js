@@ -33,7 +33,8 @@ const Footer = ({ t }) => {
       <Fade bottom>
         <S.Footer>
           <Container>
-            <Row type="flex" justify="space-between">
+            <p>Site In Construction.</p>
+            {/* <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Language>{t("Contact")}</S.Language>
                 <S.Large to="/">{t("Tell us everything")}</S.Large>
@@ -64,8 +65,8 @@ const Footer = ({ t }) => {
                   {t("Customer Support")}
                 </S.Large>
               </Col>
-            </Row>
-            <Row type="flex" justify="space-between">
+            </Row> */}
+            {/* <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>{t("ADDRESS")}</S.Language>
@@ -101,7 +102,7 @@ const Footer = ({ t }) => {
                   </S.LangSelect>
                 </S.Select>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         </S.Footer>
         <S.Extra>
@@ -115,7 +116,7 @@ const Footer = ({ t }) => {
               <S.NavLink to="/">
                 <S.LogoContainer>
                   <SvgIcon
-                    src="logo.svg"
+                    src="logo2.svg"
                     aria-label="homepage"
                     width="101px"
                     height="64px"
