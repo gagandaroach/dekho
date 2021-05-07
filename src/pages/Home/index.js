@@ -1,17 +1,61 @@
 import { lazy } from "react";
 
-import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
-
 const ContactFrom = lazy(() => import("../../components/ContactForm"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
+
+const MiddleBlockContent = {
+  "title": "Intelligent Vision Analytics",
+  "text": "Automate your security system infrastructure with state of the art computer vision algorithms.",
+  "button": "Get Started"
+}
+
+const IntroContent = {
+  "title": "COMPANY NAME PENDING HELP",
+  "text": "We aim to develop an intelligent, scalable video analytics application to autonomously monitor, track, and react to all the video data from a security camera system and support security professionals and local law enforcement. ",
+  "button": "Get Started"
+
+}
+
+const AboutContent = {
+  "title": "Light, Fast & Responsive",
+  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "section": [
+    {
+      "title": "Why Antd?",
+      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why styled-components?",
+      "content": "Styled Components gives you total control over your components.",
+      "icon": "notes.svg"
+    }
+  ]
+}
+
+const MissionContent = {
+  "title": "Ready made sections",
+  "text": "Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content."
+
+}
+
+const ProductContent = {
+  title: "Heimdall",
+  text: "An intelligent, scalable video analytics application to autonomously monitor, track, and react to all the video data from a security camera system and support security professionals and local law enforcement."
+}
+
+const ContactContent = {
+  "title": "Contact Form",
+  "text": "The following form demonstrates form validation in action. Contact form component reduces the amount of time it is being re-rendered by the user as it embraces uncontrolled form validation to reduce any unnecessary performance penalty."
+}
+
+const processingDaemon = {
+  title: "Cloud Processing Daemon",
+  text: "We analyze the data from n-point camera systems with your private on-site cloud."
+}
 
 const Home = () => {
   return (
