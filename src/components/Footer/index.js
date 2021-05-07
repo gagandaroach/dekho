@@ -69,9 +69,9 @@ const Footer = ({ t }) => {
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Para>Address To Be Decided</S.Para>
+                <S.Para>The Moon</S.Para>
+                <S.Para>TODO: Update after LLC</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
                 <S.Title>{t("Company")}</S.Title>
@@ -124,24 +124,16 @@ const Footer = ({ t }) => {
               </S.NavLink>
               <S.FooterContainer>
                 <SocialLink
-                  href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                  href="https://github.com/gagandaroach"
                   src="github.svg"
                 />
                 <SocialLink
-                  href="https://twitter.com/Adrinlolx"
+                  href="https://twitter.com/gagany1"
                   src="twitter.svg"
                 />
                 <SocialLink
-                  href="https://www.linkedin.com/in/lasha-kakabadze/"
+                  href="https://www.linkedin.com/in/gdaroach/"
                   src="linkedin.svg"
-                />
-                <SocialLink
-                  href="https://github.com/Adrinlol/"
-                  src="instagram.svg"
-                />
-                <SocialLink
-                  href="https://medium.com/@lashakakabadze/"
-                  src="medium.svg"
                 />
               </S.FooterContainer>
             </Row>

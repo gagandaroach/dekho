@@ -31,11 +31,11 @@ const Header = ({ t }) => {
     };
     return (
       <Fragment>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <S.Span>{t("About")}</S.Span>
-        </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <S.Span>{t("Mission")}</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+          <S.Span>{t("About")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <S.Span>{t("Product")}</S.Span>
@@ -57,7 +57,7 @@ const Header = ({ t }) => {
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" />
+            <SvgIcon src="logo2.svg" />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />

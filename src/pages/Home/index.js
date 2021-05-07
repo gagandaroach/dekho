@@ -2,86 +2,109 @@ import { lazy } from "react";
 
 const ContactFrom = lazy(() => import("../../components/ContactForm"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const IntroBlock = lazy(() => import("../../components/IntroBlock"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 
-const MiddleBlockContent = {
-  "title": "Intelligent Vision Analytics",
-  "text": "Automate your security system infrastructure with state of the art computer vision algorithms.",
-  "button": "Get Started"
-}
-
 const IntroContent = {
-  "title": "COMPANY NAME PENDING HELP",
-  "text": "We aim to develop an intelligent, scalable video analytics application to autonomously monitor, track, and react to all the video data from a security camera system and support security professionals and local law enforcement. ",
-  "button": "Get Started"
-
+  "title": "Modern Vision Solutions",
+  "text": "We develop intelligent, scalable video analytics solutions that autonomously monitor, track, and react to video and sensor data in real time to assist security professionals and local law enforcement.",
+  "button": "Learn More"
 }
 
-const AboutContent = {
-  "title": "Light, Fast & Responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+const PrivacyContent = {
+  "title": "Data Privacy",
+  "text": "Respect people's privacy with on site processing engines and local data storage.",
+  "button": "Get Started"
+}
+
+const MissionContent = {
+  "title": "Our Mission",
+  "text": "In a world of evolving technologies, we aim to understand and openly share approaches to large scale intelligent video analytics systems.",
+}
+
+const RealtimeContent = {
+  "title": "Realtime  Processing",
+  "text": "Analyze people and vehicles accross all the cameras in your network simulatneously.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Deep Learning Algorithms",
+      "content": "This new style of programming enables powerful vision algorithms that  annotates and analyzes video data.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
+      "title": "Meta Data Aggegration",
+      "content": ".",
+      "icon": "notes.svg"
+    }
+  ]
+}
+
+const AutomationContent = {
+  "title": "Automate Data Reporting",
+  "text": "View real time charts of building and parking lot usage. Query the anonymized meta data to Generate dynamic usage reports."
+}
+
+const ApplicationsContent = {
+  "title": "Customer Engagements",
+  "text": "",
+  "section": [
+    {
+      "title": "Universities",
+      "content": "Work with campus public safety departments to protect student privacy.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Commerical Buildings",
       "content": "Styled Components gives you total control over your components.",
       "icon": "notes.svg"
     }
   ]
 }
 
-const MissionContent = {
-  "title": "Ready made sections",
-  "text": "Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content."
-
-}
-
-const ProductContent = {
-  title: "Heimdall",
-  text: "An intelligent, scalable video analytics application to autonomously monitor, track, and react to all the video data from a security camera system and support security professionals and local law enforcement."
+const HeimDallContent = {
+  "title": "Heimdall",
+  "text": "Automate your security system infrastructure with state of the art computer vision algorithms.",
+  "section": [
+    {
+      "title": "People",
+      "content": "Observe people and bags.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Vehicles",
+      "content": "Camera make, model, and type.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Surveilance",
+      "content": "Create full screen grid views of cameras with objects.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Reporting",
+      "content": "Generate usage and traffic reports.",
+      "icon": "notes.svg"
+    }
+  ]
 }
 
 const ContactContent = {
   "title": "Contact Form",
-  "text": "The following form demonstrates form validation in action. Contact form component reduces the amount of time it is being re-rendered by the user as it embraces uncontrolled form validation to reduce any unnecessary performance penalty."
-}
-
-const processingDaemon = {
-  title: "Cloud Processing Daemon",
-  text: "We analyze the data from n-point camera systems with your private on-site cloud."
+  "text": "Interested in bringing this technology to your organization or group? Contact us and leave a message, we are happy to answer any questions."
 }
 
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <ContentBlock
-        type="right"
+      <IntroBlock
         first="true"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
         id="intro"
-      />
-      <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
-      />
-      <ContentBlock
-        type="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="graphs.svg"
-        id="about"
       />
       <ContentBlock
         type="right"
@@ -90,11 +113,39 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
-
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={RealtimeContent.title}
+        content={RealtimeContent.text}
+        section={RealtimeContent.section}
+        icon="sdp-tracking-camera.svg"
+        id="about"
+      />
+      <ContentBlock
+        type="right"
+        title={PrivacyContent.title}
+        content={PrivacyContent.text}
+        icon="developer.svg"
+      />
+      <ContentBlock
+        type="left"
+        title={AutomationContent.title}
+        content={AutomationContent.text}
+        icon="graphs.svg"
+      />
+      <ContentBlock
+        type="left"
+        title={ApplicationsContent.title}
+        content={ApplicationsContent.text}
+        section={ApplicationsContent.section}
+        icon="waving.svg"
+      />
+      <h1>Our Products</h1>
+      <ContentBlock
+        type="left"
+        title={HeimDallContent.title}
+        content={HeimDallContent.text}
+        section={HeimDallContent.section}
         icon="waving.svg"
         id="product"
       />
