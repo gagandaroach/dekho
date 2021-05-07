@@ -98,7 +98,7 @@ const ContactContent = {
 const Home = () => {
   return (
     <Container>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <IntroBlock
         first="true"
         title={IntroContent.title}
